@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>A-Store</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets\img\WhatsApp Image 2024-12-08 at 02.43.51.jpeg"" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+      <img src="assets\img\WhatsApp Image 2024-12-08 at 02.43.51.jpeg" alt=>
+
+
+      <h1 class="sitename">A-Store</h1>
+    </a>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-file-earmark-text navicon"></i>Perkenalan</a></li>
+        <li><a href="#portfolio"><i class="bi bi-house navicon"></i> Shop</a></li>
+        <li><a href="#Tentang toko"><i class="bi bi-file-earmark-text navicon"></i> Tentang toko</a></li>
+
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+    <img src="assets/img/adit-profil.jpeg" alt="Moh Aditya Lendeon" data-aos="fade-in" class="profile-img">
+
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+    <!-- Tombol Memutar Audio -->
+    <button id="playButton" onclick="toggleAudio()">Coba klik</button>
+
+    <h2>Moh Aditya Lendeon</h2>
+    <p>
+        <span class="typed" data-typed-items="Nim 220311060053,Jurusan Teknik Pertanian, Prodi Teknik Pertanian">
+            Nim 220311060053
+        </span>
+        <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+    </p>
+
+    <!-- Elemen Pemutar Musik dengan Path Lokal -->
+    <audio id="audioPlayer">
+        <source src="file:///C:/Users/User/Desktop/iPortfolio-1.0.0/assets/audio/bernadya.mp3.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+<!-- AOS Library -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Typed.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+    var typed = new Typed(".typed", options);
+
+    // Fungsi untuk memutar atau menjeda audio
+    function toggleAudio() {
+        var audio = document.getElementById('audioPlayer');
+        var button = document.getElementById('playButton');
+        
+        if (audio.paused) {
+            audio.play();
+            button.innerHTML = "Pause Music";
+        } else {
+            audio.pause();
+            button.innerHTML = "Jangan ditekan";
+        }
+    }
+</script>
+
+    </div>
+</section>
+
+
+    </section><!-- /Hero Section -->
+
+      <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section light-background">
+
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+<h2>A-Store</h2>
+<p>Tempat penjualan ponsel dan gadget gadget elektronik lainnya secara online </p>
+</div><!-- End Section Title -->
+
+<div class="container">
+
+<div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+<li data-filter="*" class="filter-active">all</li>
+<li data-filter=".filter-app">smartphone</li>
+<li data-filter=".filter-product">laptop</li>
+<li data-filter=".filter-branding">iphone </li>
+<li data-filter=".filter-books">gaming console</li>
+</ul><!-- End Portfolio Filters -->
+
+<div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\Samsung.jpeg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>Samsung</h4>
+<p>IDR 2.500.000</p>
+<a href="assets\img\portfolio\Samsung.jpeg" title="Samsung" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\asus rog gl552.jpeg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>Asus ROG GL552 </h4>
+<p>IDR 3.100.000</p>
+<a href="assets\img\portfolio\asus rog gl552.jpeg" title="Asus ROG GL552" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+<div class="portfolio-content h-100">
+<img src="assets/img/portfolio/iphone 15.jpg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>iphone  15</h4>
+<p>IDR 15.000.000</p>
+<a href="assets/img/portfolio/iphone 15.jpg" title="iPhone 15" data-gallery="portfolio-gallery-branding" class="glightbox preview-link">
+    <i class="bi bi-zoom-in"></i> <!-- Icon untuk zoom-in -->
+</a>
+></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\ps5.jpeg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>Ps 5</h4>
+<p>IDR 13.000.000</p>
+<a href="assets\img\portfolio\ps5.jpeg" title="ps5 " data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\Oppo.jpeg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>Oppo</h4>
+<p>IDR 4.200.000</p>
+<a href="assets\img\portfolio\Oppo.jpeg" title="Oppo" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\asus tuf.jpeg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>Asus Tuf </h4>
+<p>IDR 10.000.000</p>
+<a href="assets\img\portfolio\asus tuf.jpeg" title="Asus Tuf" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\iphone 12.jpg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>iphone 12 </h4>
+<p>IDR 9.800.000</p>
+<a href="assets\img\portfolio\iphone 12.jpg" title="iphone 12  " data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\ps4.jpeg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>Ps 4</h4>
+<p>IDR 3.999.999</p>
+<a href="assets\img\portfolio\ps4.jpeg" title="ps4  " data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\Vivo.jpeg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>Vivo</h4>
+<p>IDR 2.800.000</p>
+<a href="assets\img\portfolio\Vivo.jpeg" title="Vivo" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\asus strix scar.jpeg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>Asus Strix Scar </h4>
+<p>IDR 14.999.999</p>
+<a href="assets\img\portfolio\asus strix scar.jpeg" title="Asus Strix Scar" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\iphone 13.jpg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>Iphone 13</h4>
+<p>IDR 12.500.000</p>
+<a href="assets\img\portfolio\iphone 13.jpg" title="iphone  13 " data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+<div class="portfolio-content h-100">
+<img src="assets\img\portfolio\ps3.jpeg" class="img-fluid" alt="">
+<div class="portfolio-info">
+<h4>Ps 3</h4>
+<p>IDR 1.500.000</p>
+<a href="assets\img\portfolio\ps3.jpeg" title="Ps 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+</div>
+</div>
+</div><!-- End Portfolio Item -->
+
+</div><!-- End Portfolio Container -->
+    </section><!-- /Tujuan website Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Pembeli</strong> <span>Total pembeli hari ini</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Total barang terjual</strong> <span>Total barang yang terjual selama toko ini dibuka</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Total pengunjung website</strong> <span>Data pengunjung yang membuka website hari ini</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Karyawan</strong> <span>Total karyawan di A-store</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+ 
+    <!-- Tentang toko Section -->
+    <section id="Tentang toko" class="Tentang toko section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Tentang toko</h2>
+        <p>Perjalanan usaha toko A-Store dari awal dibuka pada tahun 2021 hingga sekarang 2024.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="Tentang toko-title">Pendirian A-Store</h3>
+
+            <div class="Tentang toko-item pb-0">
+              <h4>Tahun 2021</h4>
+              <p><em>Bulan 1-3: Perencanaan dan Persiapan
+
+    A-Store didirikan dengan tujuan untuk menyediakan ponsel berkualitas tinggi serta layanan pelanggan yang terbaik. Pendiri toko memulai dengan riset pasar untuk mengetahui kebutuhan konsumen akan ponsel.
+    Mencari lokasi strategis di pusat perbelanjaan yang ramai dan melakukan perbaikan serta persiapan toko.
+
+Bulan 4: Pembukaan Toko
+
+    Toko pertama A-Store dibuka di pusat kota, dengan berbagai jenis ponsel dari merek terkemuka seperti Samsung, Xiaomi, Oppo, dan Apple.
+    Pemasaran dilakukan melalui media sosial, influencer lokal, dan promosi diskon pembukaan toko.
+    Fokus pada pelayanan yang ramah dan cepat, serta menawarkan produk dengan harga bersaing.
+
+Bulan 5-12: Meningkatkan Brand Awareness
+
+    Melakukan berbagai promosi seperti diskon besar-besaran untuk ponsel tertentu, bundling dengan aksesori, dan hadiah langsung.
+    Mengembangkan akun media sosial (Instagram, Facebook, TikTok) untuk meningkatkan visibilitas dan berinteraksi dengan pelanggan.</em></p>
+
+            </div><!-- Edn Tentang toko Item -->
+
+            <h3 class="Tentang toko-title">Ekspansi dan Diversifikasi Produk</h3>
+            <div class="Tentang toko-item">
+              <h4>2022</h4>
+              <p> Bulan 1-3: Diversifikasi Produk
+        A-Store mulai menambah kategori produk seperti aksesori ponsel (charger, case, earphone, dan powerbank) serta layanan perbaikan ponsel.
+        Peluncuran program loyalitas untuk pelanggan tetap, dengan keuntungan berupa diskon dan hadiah bagi yang berbelanja rutin.
+
+    Bulan 4-6: Ekspansi ke Kota Lain
+        Setelah sukses di kota pertama, A-Store membuka cabang kedua di kota besar lain untuk menjangkau lebih banyak konsumen.
+        Pembukaan cabang baru disertai dengan promosi besar seperti potongan harga dan penawaran cicilan ringan.
+
+    Bulan 7-12: Perkembangan Layanan dan Online Shop
+        A-Store mengembangkan platform toko online untuk mempermudah pelanggan dalam membeli produk, dengan fitur pengiriman cepat dan pembelian lewat aplikasi e-commerce.
+        A-Store mulai melakukan pengiriman produk ke luar kota dan memperkenalkan layanan pengembalian barang yang lebih fleksibel.</p>
+            </div><!-- Edn Tentang toko Item -->
+
+            <div class="Tentang toko-item">
+              <h4></h4>
+              <h5></h5>
+              <p><em></em></p>
+              <p></p>
+            </div><!-- Edn Tentang toko Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="Tentang toko-title">Inovasi dan Peningkatan Layanan</h3>
+            <div class="Tentang toko-item">
+              <h4>2023</h4>
+                <p>Bulan 1-3: Peluncuran Layanan Purna Jual
+
+    A-Store memperkenalkan layanan purna jual, seperti perbaikan ponsel, garansi, dan asuransi produk.
+    Menjalin kerja sama dengan layanan asuransi ponsel untuk memberi pelanggan lebih banyak pilihan perlindungan.
+
+Bulan 4-6: Mengoptimalkan Pemasaran Digital
+
+    A-Store meningkatkan strategi pemasaran digital dengan mengoptimalkan penggunaan iklan berbayar di media sosial dan Google Ads.
+    Menjadi sponsor untuk berbagai event teknologi dan kompetisi ponsel untuk memperkenalkan produk-produk terbaru.
+
+Bulan 7-12: Menyambut Tren Ponsel Terbaru
+
+    Dengan hadirnya teknologi 5G, A-Store menjadi salah satu toko pertama yang menawarkan ponsel 5G terbaru.
+    Memperkenalkan program trade-in, di mana pelanggan bisa menukarkan ponsel lama mereka untuk mendapatkan harga diskon pada pembelian ponsel baru.</p>
+              </ul>
+            </div><!-- Edn Tentang toko Item -->
+
+            <div class="Tentang toko-item">
+              <h4>Transformasi dan Keberlanjutan</h4>
+              <h5>2024</h5>
+              <p>Bulan 1-3: Layanan VIP dan Eksklusif
+
+    A-Store memperkenalkan layanan VIP dengan akses khusus untuk pelanggan setia, termasuk pre-order ponsel baru, layanan konsultasi teknis pribadi, dan pengiriman eksklusif.
+    Membangun aplikasi mobile yang memudahkan pelanggan untuk berbelanja, melacak status perbaikan, serta mendapatkan update tentang produk terbaru.
+
+Bulan 4-6: Pemasaran Berbasis Teknologi
+
+    Menyempurnakan pengalaman berbelanja dengan teknologi augmented reality (AR) untuk melihat ponsel secara virtual sebelum membeli.
+    Menjalin kemitraan dengan perusahaan fintech untuk menawarkan kemudahan pembayaran dengan berbagai pilihan, seperti cicilan tanpa kartu kredit.
+
+Bulan 7-12: Toko A-Store Menjadi Pemain Utama di Industri Ponsel
+
+    A-Store menjadi salah satu pemain utama di pasar ponsel dengan reputasi sebagai toko yang menyediakan produk berkualitas dengan layanan pelanggan yang luar biasa.
+    Meningkatkan tanggung jawab sosial perusahaan dengan program donasi ponsel untuk pelajar dan komunitas yang membutuhkan.</p>
+              </ul>
+            </div><!-- Edn Tentang toko Item -->
+    </section><!-- /Tentang toko Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+
+</div>
+
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+  
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Berikut ini adalah komentar dari beberapa pembeli</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Saya sangat senang membeli gadget disini karena memiliki harga yang terjangkau dan terpercaya. </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets\img\portfolio\alex.jpeg" class="testimonial-img" alt="">
+                <h3>Alexander pirego</h3>
+                <h4>Ketua pemuda malalayang</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>ketika saya menekan tombol lagu di website ini saya langsung merasa sedih teringat sosok wanita yang pernah saya perjuangkan.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets\img\portfolio\tian.jpeg" class="testimonial-img" alt="">
+                <h3>Cristian kondoj</h3>
+                <h4>Mantan narapidana</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Sangat baik, tpi mungkin saya akan membeli nnti saat saya sudah gunting rambut</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets\img\portfolio\ando.jpeg" class="testimonial-img" alt="">
+                <h3>Alfrando tompudung</h3>
+                <h4>influencer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Apakah disini menjual makanan?</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets\img\portfolio\joel.jpeg" class="testimonial-img" alt="">
+                <h3>Joel warouw</h3>
+                <h4>Mahasiswa unsrat</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>. . .</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets\img\portfolio\kairi.jpeg"class="testimonial-img" alt="">
+                <h3>kairi</h3>
+                <h4>atlet e-sport</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Tidak bisa mengirim nomor pribadi jadi silahkan hubungi joel ato alex saja, Terima kasih.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Alamat</h3>
+                  <p>Intinya di manado</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Hubungi kami</h3>
+                  <p>082192991999</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>JoelGaming@example.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">A-Store</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="Moh Aditya Lendeon">Moh Aditya Lendeon</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
